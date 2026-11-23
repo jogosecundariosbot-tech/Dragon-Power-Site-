@@ -107,8 +107,8 @@ summary:hover {
     color: rgb(15, 190, 209);
 }
 
-.mitico::bafter{
-    color: rgb(153, 47, 153);
+.mitico::after{
+    color: rgb(155, 3, 155);
 }
 
 .ultrararo::after {
