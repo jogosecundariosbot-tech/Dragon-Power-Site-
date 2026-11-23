@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'cursive';
+    src: url(fonte/chancery_lane/ChanceryLaneBold.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-image: url(image/body.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-x: clip;
+    font-family: 'cursive', Arial, Helvetica, sans-serif;
+} 
+
+.back {
+    max-width: 700px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.247);
+}
+
+h1 {
+    text-align: center;
+    padding-top: 20px;
+    text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.404);
+    border-radius: 10px;
+}
+
+.pe {
+    text-align: center;
+    margin: 10px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+.bloco {
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.304);
+    width: 100%;
+    margin-top: 0px;
+    padding-bottom: 10px;
+}
+
+details {
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+summary:hover {
+    text-decoration: underline;
+}
+
+.legenda {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 25px auto;
+}
+
+.legenda p {
+    margin: 5px;
+}
+
+.proibido {
+    grid-column: 1 / 3;
+}
+
+
+
+.legenda p::after {
+    content: "●";
+    margin-left: 8px;
+}
+
+.comum::after {
+    color: rgb(88, 87, 87);
+}
+
+.epico::after {
+    color: rgb(255, 89, 0);
+}
+
+.incomum::after {
+    color: rgb(3, 160, 3);
+}
+
+.lendario::after {
+    color: rgb(213, 1, 1);
+}
+
+.raro::after {
+    color: rgb(15, 190, 209);
+}
+
+.mitico::bafter{
+    color: rgb(153, 47, 153);
+}
+
+.ultrararo::after {
+    color: rgb(229, 122, 140);
+}
+
+.divino::after {
+    color: rgb(213, 151, 4);
+}
+
+.proibido::after {
+    color: black;
+}
+
+nav > details {
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+nav > details > summary {
+    list-style: none;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px;
+    font-size: 24px;
+    padding: 10px;
+}
+
+nav > details > summary::-webkit-details-marker {
+    display: none;
+}
+
+nav > details > p {
+    text-align: center;
+    margin: 10px;
+    font-size: 18px;
+    padding: 10px;
+}
